@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800')
+
+@import 'normalize'
+@import 'widget-wrap.css'
+@import 'theme.css'
+
+*
+  font-family: "Open Sans"
+body
+  padding: 80px 0
+header
+  margin-bottom: 80px
+
+  .rdview-logo
+    height: 50px
+    background:
+      image: url("../img/rdview-logo.svg")
+      repeat: no-repeat
+      size: contain
+      position: center
+  h4
+    color: #343e46
+    font-size: 1.2rem
+    margin: 10px 0 0 0
+    text-align: center
+    text-transform: uppercase
+
+#main-wrap
+  padding: 0 100px
+  .form-widget-wrap
+    display: flex
+    margin-bottom: 80px
+    form
+      width: 70%
+      .form-line
+        display: flex
+        margin-bottom: 40px
+        .input-wrap
+          display: flex
+          flex-direction: column
+          width: 27%
+          margin-right: 20px
+          label
+            margin-bottom: 10px
+            color: #8e8e8e
+          input
+            border: 0
+            font-size: 1rem
+            font-weight: 600
+            color: #8e8e8e
+            background: #f2f3f7
+            border-radius: 6px
+            padding: 10px 14px
+
+      button
+        width: 27%
+        cursor: pointer
+        border: 0
+        font-size: 1rem
+        font-weight: 600
+        color: white
+        background: #2ecc71
+        text-transform: uppercase
+        padding: 10px 30px
+        transition: 300ms all ease-in-out
+        border-radius: 6px
+        &:hover
+          background: #27ae60
+
+    .widget-container
+      width: 30%
+
+  .code-wrap
+    width: 100%
+
+    .code-title
+      color: #343e46

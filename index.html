@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Widget generator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="rdview-logo"></div>
+    <h4>widget code generator</h4>
+  </header>
+
+  <section id="main-wrap">
+
+    <div class="form-widget-wrap">
+
+      <form class="">
+
+        <div class="form-line">
+
+          <div class="input-wrap">
+            <label for="nom">Nom</label>
+            <input type="text" id="name" placeholder="Micheline Poitou">
+          </div>
+
+          <div class="input-wrap">
+            <label for="mots-cles">Mots-Clés</label>
+            <input type="text" id="mots-cles" placeholder="eg.: naturopathe...">
+          </div>
+
+          <div class="input-wrap">
+            <label for="intitule">Intitulé</label>
+            <input type="text" id="intitule" placeholder="eg.: consultation...">
+          </div>
+
+        </div>
+
+        <div class="form-line">
+
+          <div class="input-wrap">
+            <label for="lien-photo">Lien photo</label>
+            <input type="text" id="lien-photo" placeholder="http://i.imgur.com/XXX.png">
+          </div>
+
+          <div class="input-wrap">
+            <label for="lien-rdv">Lien RDView</label>
+            <input type="text" id="lien-rdv" placeholder="https://votre-nom.rdview.live">
+          </div>
+
+          <div class="input-wrap">
+            <label for="couleur">Couleur</label>
+            <input type="text" id="couleur" placeholder="Choisir une couleur">
+          </div>
+
+        </div>
+
+        <button type="button" name="gen-code">génerer code</button>
+
+      </form>
+
+      <div class="widget-container">
+<div class="widget-wrap">
+
+  <div class="widget-title">
+    <h4>retrouvez mes offres <br>de <span class="widget-title-span">consultation</span> en ligne</h4>
+  </div>
+
+  <div class="widget-details-wrap">
+    <div class="widget-avatar"></div>
+    <div class="widget-name">
+      <h4 class="name-presta">Micheline Poitou</h4>
+      <h5 class="detail-presta">Expérience, discrétion, efficacité</h5>
+    </div>
+  </div>
+
+  <a class="rdview-btn-link" href="#" target="_blank">
+    <div class="rdview-btn">
+      <span class="rdview-logo"></span>
+      <span class="rdview-text">PRENDRE UN RENDEZ-VIEW</span>
+    </div>
+  </a>
+
+</div>
+      </div>
+
+    </div>
+
+    <div class="code-wrap">
+    </div>
+
+
+
+  </section>
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script src="assets/js/jqColorPicker.min.js" type="text/javascript"></script>
+
+  <script src="assets/js/min/functions-min.js" type="text/javascript"></script>
+
+
+
+  <!--
+  <script type="text/javascript">
+
+    $('.go-btn-go').click (function(){
+      var codehtml = $('.widget-wrap')[0].outerHTML;
+    });
+
+  </script>
+  -->
+
+</body>
+
+</html>
