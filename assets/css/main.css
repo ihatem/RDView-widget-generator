@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(widget-wrap.css);
@@ -190,62 +191,135 @@ body {
 
 header {
   margin-bottom: 80px; }
-  header .rdview-logo {
-    height: 50px;
-    background-image: url("../img/rdview-logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; }
-  header h4 {
-    color: #343e46;
-    font-size: 1.2rem;
-    margin: 10px 0 0 0;
-    text-align: center;
-    text-transform: uppercase; }
+
+header .rdview-logo {
+  height: 50px;
+  background-image: url("../img/rdview-logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+header h4 {
+  color: #343e46;
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+  text-align: center;
+  text-transform: uppercase; }
 
 #main-wrap {
-  padding: 0 100px; }
+  padding: 0 10%; }
+
+#main-wrap .code-wrap pre {
+  margin-bottom: 4em; }
+
+#main-wrap .code-wrap .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+#main-wrap .code-wrap .title h4 {
+  margin: 0; }
+
+#main-wrap .code-wrap .title .active::before {
+  opacity: .5 !important; }
+
+#main-wrap .code-wrap .title .cpy-btn {
+  align-self: flex-end;
+  cursor: pointer;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #2ecc71;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  transition: 300ms all ease-in-out;
+  border-radius: 6px;
+  position: relative; }
+
+#main-wrap .code-wrap .title .cpy-btn::before {
+  content: 'Code copié avec succées';
+  position: absolute;
+  font-size: .8em;
+  box-sizing: border-box;
+  padding: .5em;
+  display: inline-block;
+  right: 0;
+  opacity: 0;
+  color: white;
+  bottom: calc(100% + 5px);
+  background: #3a3a3a;
+  border-radius: 6px;
+  transition: opacity .3s ease-in-out; }
+
+#main-wrap .form-widget-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px; }
+
+@media (max-width: 1280px) {
   #main-wrap .form-widget-wrap {
-    display: flex;
-    margin-bottom: 80px; }
-    #main-wrap .form-widget-wrap form {
-      width: 70%; }
-      #main-wrap .form-widget-wrap form .form-line {
-        display: flex;
-        margin-bottom: 40px; }
-        #main-wrap .form-widget-wrap form .form-line .input-wrap {
-          display: flex;
-          flex-direction: column;
-          width: 27%;
-          margin-right: 20px; }
-          #main-wrap .form-widget-wrap form .form-line .input-wrap label {
-            margin-bottom: 10px;
-            color: #8e8e8e; }
-          #main-wrap .form-widget-wrap form .form-line .input-wrap input {
-            border: 0;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #8e8e8e;
-            background: #f2f3f7;
-            border-radius: 6px;
-            padding: 10px 14px; }
-      #main-wrap .form-widget-wrap form button {
-        width: 27%;
-        cursor: pointer;
-        border: 0;
-        font-size: 1rem;
-        font-weight: 600;
-        color: white;
-        background: #2ecc71;
-        text-transform: uppercase;
-        padding: 10px 30px;
-        transition: 300ms all ease-in-out;
-        border-radius: 6px; }
-        #main-wrap .form-widget-wrap form button:hover {
-          background: #27ae60; }
-    #main-wrap .form-widget-wrap .widget-container {
-      width: 30%; }
-  #main-wrap .code-wrap {
-    width: 100%; }
-    #main-wrap .code-wrap .code-title {
-      color: #343e46; }
+    flex-direction: column;
+    align-items: center; } }
+
+#main-wrap .form-widget-wrap form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px; }
+
+@media (max-width: 1280px) {
+  #main-wrap .form-widget-wrap form {
+    margin-bottom: 80px;
+    margin-right: 0; } }
+
+#main-wrap .form-widget-wrap form .form-line {
+  display: flex;
+  margin-bottom: 30px; }
+
+@media (max-width: 980px) {
+  #main-wrap .form-widget-wrap form .form-line {
+    flex-direction: column; } }
+
+#main-wrap .form-widget-wrap form .form-line .input-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 20px; }
+
+#main-wrap .form-widget-wrap form .form-line .input-wrap:last-child {
+  margin-right: 0; }
+
+#main-wrap .form-widget-wrap form .form-line .input-wrap label {
+  margin-bottom: 10px;
+  color: #8e8e8e; }
+
+#main-wrap .form-widget-wrap form .form-line .input-wrap input {
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #8e8e8e;
+  background: #f2f3f7;
+  border-radius: 6px;
+  padding: 10px 14px; }
+
+#main-wrap .form-widget-wrap form button {
+  align-self: flex-start;
+  cursor: pointer;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #2ecc71;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  transition: 300ms all ease-in-out;
+  border-radius: 6px; }
+
+#main-wrap .form-widget-wrap form button:hover {
+  background: #27ae60; }
+
+@media (max-width: 1280px) {
+  #main-wrap .form-widget-wrap form button {
+    align-self: center; } }
